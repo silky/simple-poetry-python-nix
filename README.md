@@ -41,10 +41,11 @@ via the Nix-shell binary created by poetry2nix
 
 ```shell
 > nix develop
+...
 > some-app
 ```
 
-or just as a simple Python module:
+or just as a simple Python module (inside the Nix shell):
 
 ```shell
 > python -m some_app.main
