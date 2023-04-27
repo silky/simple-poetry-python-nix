@@ -1,0 +1,21 @@
+[tool.poetry]
+name        = "some_app"
+version     = "0.1.0"
+description = "Some App"
+authors     = ["silky <noonsilk+-noonsilk@gmail.com>"]
+readme      = "README.md"
+packages    = [{include = "some_app"}]
+
+
+[tool.poetry.scripts]
+some-app = "some_app.main:main"
+
+
+[tool.poetry.dependencies]
+python        = "^3.11"
+python-dotenv = "^1.0.0"
+
+
+[build-system]
+requires      = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
