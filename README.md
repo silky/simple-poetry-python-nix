@@ -10,6 +10,14 @@ It demonstrates
 - Running via Docker, providing the envars.
 
 
+## Trivia
+
+- Despite how it seems, `mkPoetryEnv` from poetry2nix [does
+_not_](https://github.com/nix-community/poetry2nix/blob/master/default.nix#L366)
+install the present library as "editable"; it simply doesn't install it. This
+means you can "only" "import" it from the root directory of this project.
+
+
 ### Pre-reqs
 
 - A `.env` file. You can symlink the example one:
