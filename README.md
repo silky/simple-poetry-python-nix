@@ -14,8 +14,8 @@ It demonstrates
 
 - A `.env` file. You can symlink the example one:
 
-```
-ln -s .env-example .env
+```shell
+> ln -s .env-example .env
 ```
 
 
@@ -39,7 +39,7 @@ via the Nix-shell binary created by poetry2nix
 or just as a simple Python module:
 
 ```shell
-python -m some_app.main
+> python -m some_app.main
 ```
 
 or as a Docker image:
